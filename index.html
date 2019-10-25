@@ -79,12 +79,12 @@
 
 
 
-<meta name="description" content="开心果">
+<meta name="description" content="开心果的程序猿">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Daniel&#39;s Blog">
 <meta property="og:url" content="https:&#x2F;&#x2F;danielyzd.github.io&#x2F;DanielBlog&#x2F;index.html">
 <meta property="og:site_name" content="Daniel&#39;s Blog">
-<meta property="og:description" content="开心果">
+<meta property="og:description" content="开心果的程序猿">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 
@@ -179,9 +179,9 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/DanielBlog/%20" rel="section">
+          <a href="/DanielBlog/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             首页
           </a>
@@ -204,6 +204,22 @@
 
   
 </nav>
+<script>
+	
+	window.onload = function(){
+		var path = 'https://danielyzd.github.io/DanielBlog'; //这里要改成你博客的地址
+		var localhostItem = String(window.location).split(path)[1];
+		var LiNode = document.querySelectorAll('#menu > li > a')
+		
+		for(var i = 0; i< LiNode.length;i++){
+			var item = String(LiNode[i].href).split(path)[1];
+			if(item == localhostItem && item != undefined){
+				LiNode[i].setAttribute('style','border-bottom:1px solid black');
+			}
+		}
+	};
+
+</script>
 
 
 
@@ -283,6 +299,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  93 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
+          
 
           
 
@@ -301,7 +348,7 @@
       
         
           
-            <p><a href="https://juejin.im/post/5c4730c9f265da61616efeec#heading-7" target="_blank" rel="noopener">超详细Hexo+Github Page搭建技术博客教程</a><br><a href="https://asdfv1929.github.io/2018/01/20/gitalk/" target="_blank" rel="noopener">Hexo Next主题中集成gitalk评论系统</a><br><a href="https://blog.csdn.net/hyb612/article/details/78299971" target="_blank" rel="noopener">hexo 博客next主题集成gitment或者gitalk评论系统</a><br><a href="https://www.jianshu.com/p/b4ca8e7c7980" target="_blank" rel="noopener">hexo使用gitalk评论组件的几个注意点</a><br><a href="https://www.jianshu.com/p/5cdfc6bbf678" target="_blank" rel="noopener">用Hexo+Github 搭建属于自己的博客 -名称过长参考里面md5.js文件</a></p>
+            <p><a href="https://juejin.im/post/5c4730c9f265da61616efeec#heading-7" target="_blank" rel="noopener">超详细Hexo+Github Page搭建技术博客教程</a><br><a href="https://asdfv1929.github.io/2018/01/20/gitalk/" target="_blank" rel="noopener">Hexo Next主题中集成gitalk评论系统</a><br><a href="https://blog.csdn.net/hyb612/article/details/78299971" target="_blank" rel="noopener">hexo 博客next主题集成gitment或者gitalk评论系统</a><br><a href="https://www.jianshu.com/p/b4ca8e7c7980" target="_blank" rel="noopener">hexo使用gitalk评论组件的几个注意点</a><br><a href="https://www.jianshu.com/p/5cdfc6bbf678" target="_blank" rel="noopener">用Hexo+Github 搭建属于自己的博客 -名称过长参考里面md5.js文件</a><br><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next官网</a><br><a href="https://asdfv1929.github.io/2018/01/20/gitalk/" target="_blank" rel="noopener">博客实例</a><br><a href="https://pojian.xyz/" target="_blank" rel="noopener">博客实例</a><br><a href="https://www.cnblogs.com/php-linux/p/8418518.html" target="_blank" rel="noopener">Hexo添加字数统计和阅读时长</a></p>
 
           
         
@@ -402,6 +449,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  6 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
           
 
           
@@ -521,6 +599,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  73 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
           
 
           
@@ -654,6 +763,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  0 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
+          
 
           
 
@@ -743,7 +883,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Daniel Yang</p>
-              <p class="site-description motion-element" itemprop="description">开心果</p>
+              <p class="site-description motion-element" itemprop="description">开心果的程序猿</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -800,6 +940,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Daniel Yang</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">172</span>
   
 </div>
 

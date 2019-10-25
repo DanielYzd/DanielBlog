@@ -79,12 +79,12 @@
 
 
 
-<meta name="description" content="开心果">
+<meta name="description" content="开心果的程序猿">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Daniel&#39;s Blog">
 <meta property="og:url" content="https:&#x2F;&#x2F;danielyzd.github.io&#x2F;DanielBlog&#x2F;archives&#x2F;index.html">
 <meta property="og:site_name" content="Daniel&#39;s Blog">
-<meta property="og:description" content="开心果">
+<meta property="og:description" content="开心果的程序猿">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 
@@ -178,9 +178,9 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/DanielBlog/%20" rel="section">
+          <a href="/DanielBlog/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             首页
           </a>
@@ -203,6 +203,22 @@
 
   
 </nav>
+<script>
+	
+	window.onload = function(){
+		var path = 'https://danielyzd.github.io/DanielBlog'; //这里要改成你博客的地址
+		var localhostItem = String(window.location).split(path)[1];
+		var LiNode = document.querySelectorAll('#menu > li > a')
+		
+		for(var i = 0; i< LiNode.length;i++){
+			var item = String(LiNode[i].href).split(path)[1];
+			if(item == localhostItem && item != undefined){
+				LiNode[i].setAttribute('style','border-bottom:1px solid black');
+			}
+		}
+	};
+
+</script>
 
 
 
@@ -427,7 +443,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Daniel Yang</p>
-              <p class="site-description motion-element" itemprop="description">开心果</p>
+              <p class="site-description motion-element" itemprop="description">开心果的程序猿</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -484,6 +500,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Daniel Yang</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">172</span>
   
 </div>
 
