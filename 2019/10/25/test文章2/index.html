@@ -359,6 +359,9 @@
           
 
   
+ <div id="gitalk-container"></div>
+
+  
 
 
 
@@ -633,6 +636,22 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+ <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+ <script type="text/javascript">
+  var gitalk = new Gitalk({
+          clientID: '37edacc5d71049f3565b',
+          clientSecret: 'e6e9fb6739f8898d00e350c329934e70fe31c26c',
+          repo: 'https://danielyzd.github.io/DanielBlog/',
+          owner: 'danielyzd',
+          admin: ['danielyzd'],
+          id: md5(location.pathname),
+          distractionFreeMode: 'true'
+  })
+        gitalk.render('gitalk-container')           
+       </script> 
 
   
 
