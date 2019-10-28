@@ -3,11 +3,11 @@
   <title>DanielYzd&#39;sBlog</title>
   
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="/DanielBlog/atom.xml" rel="self"/>
   
-  <link href="https://danielyzd.github.io/myBlog/"/>
+  <link href="https://danielyzd.github.io/"/>
   <updated>2019-10-28T15:06:52.757Z</updated>
-  <id>https://danielyzd.github.io/myBlog/</id>
+  <id>https://danielyzd.github.io/</id>
   
   <author>
     <name>DanielYzd</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>nodejs版本降级升级</title>
-    <link href="https://danielyzd.github.io/myBlog/2019/10/28/nodejs%E7%89%88%E6%9C%AC%E9%99%8D%E7%BA%A7%E5%8D%87%E7%BA%A7/"/>
-    <id>https://danielyzd.github.io/myBlog/2019/10/28/nodejs版本降级升级/</id>
+    <link href="https://danielyzd.github.io/2019/10/28/nodejs%E7%89%88%E6%9C%AC%E9%99%8D%E7%BA%A7%E5%8D%87%E7%BA%A7/"/>
+    <id>https://danielyzd.github.io/2019/10/28/nodejs版本降级升级/</id>
     <published>2019-10-28T15:04:30.000Z</published>
     <updated>2019-10-28T15:06:52.757Z</updated>
     
@@ -36,17 +36,17 @@
     </summary>
     
     
-      <category term="开发环境" scheme="https://danielyzd.github.io/myBlog/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+      <category term="开发环境" scheme="https://danielyzd.github.io/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
     
     
-      <category term="node" scheme="https://danielyzd.github.io/myBlog/tags/node/"/>
+      <category term="node" scheme="https://danielyzd.github.io/tags/node/"/>
     
   </entry>
   
   <entry>
     <title>hexo笔记</title>
-    <link href="https://danielyzd.github.io/myBlog/2019/10/28/hexo%E7%AC%94%E8%AE%B0/"/>
-    <id>https://danielyzd.github.io/myBlog/2019/10/28/hexo笔记/</id>
+    <link href="https://danielyzd.github.io/2019/10/28/hexo%E7%AC%94%E8%AE%B0/"/>
+    <id>https://danielyzd.github.io/2019/10/28/hexo笔记/</id>
     <published>2019-10-28T02:13:34.000Z</published>
     <updated>2019-10-28T15:07:30.279Z</updated>
     
@@ -63,14 +63,14 @@
     
     
     
-      <category term="hexo" scheme="https://danielyzd.github.io/myBlog/tags/hexo/"/>
+      <category term="hexo" scheme="https://danielyzd.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>test文章</title>
-    <link href="https://danielyzd.github.io/myBlog/2019/10/25/test%E6%96%87%E7%AB%A0/"/>
-    <id>https://danielyzd.github.io/myBlog/2019/10/25/test文章/</id>
+    <link href="https://danielyzd.github.io/2019/10/25/test%E6%96%87%E7%AB%A0/"/>
+    <id>https://danielyzd.github.io/2019/10/25/test文章/</id>
     <published>2019-10-25T13:47:54.000Z</published>
     <updated>2019-10-28T11:34:02.139Z</updated>
     
@@ -91,8 +91,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://danielyzd.github.io/myBlog/2019/10/25/hello-world/"/>
-    <id>https://danielyzd.github.io/myBlog/2019/10/25/hello-world/</id>
+    <link href="https://danielyzd.github.io/2019/10/25/hello-world/"/>
+    <id>https://danielyzd.github.io/2019/10/25/hello-world/</id>
     <published>2019-10-25T12:54:47.857Z</published>
     <updated>2019-10-25T12:54:47.857Z</updated>
     
