@@ -1,6 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>基于vue+element搭建管理界面</title>
+    <url>/DanielBlog/2019/11/04/%E5%9F%BA%E4%BA%8Evue-element%E6%90%AD%E5%BB%BA%E7%AE%A1%E7%90%86%E7%95%8C%E9%9D%A2/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://cli.vuejs.org/zh/guide/installation.html" target="_blank" rel="noopener">Vue CLI 3</a><br><a href="https://cn.vuejs.org/v2/guide/installation.html" target="_blank" rel="noopener">Vue.js</a><br><a href="https://element.eleme.cn/#/zh-CN/component/installation" target="_blank" rel="noopener">Element</a><br><a href="https://www.echartsjs.com/zh/index.html" target="_blank" rel="noopener">echarts</a></p>
+</blockquote>
+<h3 id="Vue-js-devtools开发工具安装教程"><a href="#Vue-js-devtools开发工具安装教程" class="headerlink" title="Vue.js devtools开发工具安装教程"></a>Vue.js devtools开发工具安装教程</h3><hr>
+<ul>
+<li>浏览器商店直接安装</li>
+<li>手动安装教程<br><a href="https://www.cnblogs.com/chenhuichao/p/11039427.html" target="_blank" rel="noopener">https://www.cnblogs.com/chenhuichao/p/11039427.html</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>项目实战</category>
+      </categories>
+      <tags>
+        <tag>vue/cli</tag>
+        <tag>vue</tag>
+        <tag>element</tag>
+        <tag>vuex</tag>
+        <tag>后台管理</tag>
+        <tag>echarts</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JS回调函数</title>
+    <url>/DanielBlog/2019/11/04/JS%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<blockquote>
+<p>原作: Cherry丶小丸子<br>来源: 简书</p>
+</blockquote>
+<p><a href="https://www.jianshu.com/p/40e459cfdc6f" target="_blank" rel="noopener">JS回调函数</a></p>
+]]></content>
+      <categories>
+        <category>技术文章</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+        <tag>回调函数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JS进阶知识</title>
+    <url>/DanielBlog/2019/10/30/JS%E8%BF%9B%E9%98%B6%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<blockquote>
+<p>作者：前端小智<br>来源：掘金</p>
+</blockquote>
+<p><strong>本文介绍 JS 比较重要的12个概念，但绝对不是说 JS开发人员只需要知道这些就可以了。</strong></p>
+<h3 id="1-变量赋值（值-vs-引用）"><a href="#1-变量赋值（值-vs-引用）" class="headerlink" title="1.变量赋值（值 vs 引用）"></a>1.变量赋值（值 vs 引用）</h3><hr>
+<p>理解 JS 如何给变量赋值可以帮助我们减少一些不必要的 bug。相反，如果，不理解这一点，可能很容易地编写被无意中更改值的代码</p>
+<p>JS 总是按照值来给变量赋值。 <strong>这一部分非常重要</strong>：当指定的值是 JavaScript 的五种基本类型之一（即 <code>Boolean</code>，<code>null</code>，<code>undefined</code>，<code>String</code> 和 <code>Number</code>）时，分配是实际值。 但是，当指定的值是 <code>Array</code>，<code>Function</code>或<code>Object</code>时，将内存中对象的引用地址赋值给变量。<br>在以下代码段中，使用 <code>var1</code> 对 <code>var2</code> 进行赋值。 由于<code>var1</code>是基本类型（String），因此 <code>var2</code> 的值等于 <code>var1</code> 字符中值，但 <code>var1</code> 和 <code>var2</code> 之间是独立的变量，不会影响彼此。 因此，重新赋值<code>var2</code>对<code>var1</code>没有影响。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let var1 = &apos;小智;</span><br><span class="line">let var2 = var1;</span><br><span class="line">var2 = &apos;王大冶&apos;;</span><br><span class="line">console.log(var1); // 小智</span><br><span class="line">console.log(var2); // 王大冶</span><br></pre></td></tr></table></figure>
+
+<p>接着，与对象赋值进行比较。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let var1 = &#123; name: &apos;小智&apos; &#125;</span><br><span class="line">let var2 = var1;</span><br><span class="line">var2.name = &apos;王大冶&apos;;</span><br><span class="line">console.log(var1); // &#123;name: &quot;王大冶&quot;&#125;</span><br><span class="line">console.log(var2); // &#123;name: &quot;王大冶&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-闭包"><a href="#2-闭包" class="headerlink" title="2.闭包"></a>2.闭包</h3><hr>
+<p>闭包是一个重要的JS模式，可以访问私有变量。在本例中，<code>createGreeter</code>返回一个匿名函数，这个函数可以访问参数<code>greeting</code>。在<br>后续的调用中，<code>sayHello</code>有权访问这个greeting参数。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function createGreeter(greeting) &#123;</span><br><span class="line">    return function(name) &#123;</span><br><span class="line">        console.log(greeting + &apos;,&apos; + name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">const sayHello = createGreeter(&apos;你好&apos;);</span><br><span class="line">sayHello(&apos;Daniel&apos;); //你好，Daniel</span><br></pre></td></tr></table></figure>
+
+<p><strong>在更真实的场景中，咱们可以设想一个初始函数<code>apiConnect(apiKey)</code>，它返回一些使用<code>API key</code>的方法。在这种情况下，<code>apiKey</code> 只需要提供一次即可。</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function apiConnect(apiKey) &#123;</span><br><span class="line">    function get(route) &#123;</span><br><span class="line">        return fetch(`$&#123;route&#125;?key=$&#123;apiKey&#125;`);</span><br><span class="line">    &#125;</span><br><span class="line">    function post(route,params) &#123;</span><br><span class="line">        return fetch(route, &#123;</span><br><span class="line">            method: &apos;POST&apos;,</span><br><span class="line">            body: JSON.stringigy(params),</span><br><span class="line">            headers:&#123;</span><br><span class="line">                &apos;Authorization&apos;: `Bearer $&#123;apiKey&#125;`</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    return &#123; get, post&#125;</span><br><span class="line">&#125;</span><br><span class="line">const api = apiConnect(&apos;my-secret-key&apos;);</span><br><span class="line">//不再需要包含apiKey</span><br><span class="line">api.get(&apos;http://www.example.com/get-endpoint&apos;);</span><br><span class="line">api.post(&apos;http://www.example.com/post-endpoint&apos;, &#123; name: &apos;Joe&apos;&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-解构"><a href="#3-解构" class="headerlink" title="3.解构"></a>3.解构</h3><hr>
+<p>JS参数解构可以从对象中提取所需属性的常用方法</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const obj = &#123;</span><br><span class="line">    name: &apos;Daniel&apos;,</span><br><span class="line">    food: &apos;食物&apos;,</span><br><span class="line">&#125;</span><br><span class="line">const &#123; name, food &#125; = obj;</span><br><span class="line">console.log(name, food); //Daniel 食物</span><br></pre></td></tr></table></figure>
+
+<p>如果需要取别名，可以使用如下方式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const obj = &#123;</span><br><span class="line">    name: &apos;Daniel&apos;,</span><br><span class="line">    food: &apos;食物&apos;</span><br><span class="line">&#125;</span><br><span class="line">const &#123; name: myName, food: myFood &#125; = obj;</span><br><span class="line">console.log(myName,myFood); // Daniel 食物</span><br></pre></td></tr></table></figure>
+
+<p><strong>解构经常用于直接用于提取传给函数的参数。如果你熟悉React，可能已经见过这个:</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const person = &#123;</span><br><span class="line">    name: &apos;Daniel&apos;,</span><br><span class="line">    age: 28</span><br><span class="line">&#125;</span><br><span class="line">function introduce(&#123; name, age&#125;) &#123;</span><br><span class="line">    console.log(`我是$&#123;name&#125; , 今天 $&#123;age&#125;岁了！`);</span><br><span class="line">&#125;</span><br><span class="line">introduce(person);</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-展开运算符"><a href="#4-展开运算符" class="headerlink" title="4.展开运算符"></a>4.展开运算符</h3><hr>
+<p>ES6的常用之一的特性就是展开(<code>...</code>),在下面的例子中, <code>Math.max</code>不能应用于<code>arr</code>数组，因为它不将数组作为参数,但它可以将各个元素作为参数传入。展开运算符<code>...</code>可用于提取数组的各个元素。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const arr = [2, 4, 5, 10, -1];</span><br><span class="line">console.log(...arr);</span><br><span class="line">const max = Math.max(...arr);</span><br><span class="line">console.log(max); // 10</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-剩余参数"><a href="#5-剩余参数" class="headerlink" title="5.剩余参数"></a>5.剩余参数</h3><hr>
+<p>剩余参数语法和展开语法看起来的一样的，不同的是展开语法是为了解构数组和对象；而剩余参数和展开运算符是相反的，剩余参数手机多个<br>参数合成一个数组。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function myFunc(...args) &#123;</span><br><span class="line">    console.log(args[0] + args[1]);</span><br><span class="line">&#125;</span><br><span class="line">myFunc(1, 2, 3, 4); // 3</span><br></pre></td></tr></table></figure>
+
+<p><strong>rest parameters</strong> 和 <strong>arguments</strong> 的区别</p>
+<p>arguments 是伪数组，包含所有的实参<br>rest(剩余)参数 是标准的数组，可以使用数组的方法</p>
+<h3 id="6-数组方法"><a href="#6-数组方法" class="headerlink" title="6.数组方法"></a>6.数组方法</h3><hr>
+<h4 id="map-filter-reduce"><a href="#map-filter-reduce" class="headerlink" title="map filter reduce"></a>map filter reduce</h4><p>JS数组方法<code>map</code> <code>filter</code>和<code>reduce</code>容易混淆，这些都是转换数组或返回聚合值的有用方法</p>
+<p><strong>map:返回一个数组，其中每个元素都使用指定函数进行过转换。</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const arr = [1, 2, 3, 4, 5, 6];</span><br><span class="line">const mapped = arr.map(el =&gt; el + 20);</span><br><span class="line">console.log(mapped);</span><br><span class="line">//[21, 22, 23, 24, 25, 26]</span><br></pre></td></tr></table></figure>
+
+<p><strong>filter:返回一个数组，只有当指定函数返回true时，相应的元素才会被包含在这个数组中。</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const arr = [1, 2, 3, 4, 5, 6];</span><br><span class="line">const filtered = arr.filter(el =&gt; el ===2 || el ===4);</span><br><span class="line">console.log(filtered);</span><br></pre></td></tr></table></figure>
+
+<p><strong>reduce:按函数中指定的值累加.</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const arr = [1, 2, 3, 4, 5, 6];</span><br><span class="line">const reduced = arr.reduce((total, current) =&gt; total + current);</span><br><span class="line">console.log(reduced);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>recude的用法<br><strong>语法</strong></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">arr.reduce(function(prev,cur,index,arr)&#123;</span><br><span class="line">    ....</span><br><span class="line">&#125;,init)</span><br></pre></td></tr></table></figure>
+
+<p>其中：<br><code>arr</code> 表示原数组<br><code>prev</code> 表示上一次调用回调的返回值，或者初始值<code>init</code>；<br><code>cur</code> 表示当前正在处理的数组元素；<br><code>index</code> 表示当前正在处理的数组元素的索引，若提供<code>init</code>值，则索引为<strong>0</strong>，否在索引为<strong>1</strong>；<br><code>init</code> 表示初始值</p>
+<p>看上去是不是感觉很复杂？没关系，只是看起来而已，其实常用的参数只有两个:<code>prev</code>和<code>cur</code>。<br>接下来我们跟着实例来看看具体用法吧~</p>
+<p>先通过一个原始数组：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var arr = [3, 8, 4, 5, 3, 0, 9];</span><br></pre></td></tr></table></figure>
+<p>通过reduce实现以下需求，实现起来比较简洁</p>
+<ol>
+<li>求数组项之和</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var sum = arr.reduce(function(prev, cur)&#123;</span><br><span class="line">    return prev + cur;</span><br><span class="line">&#125;,0);</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>求数组的最大值</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var max = arr.reduce((prev, cur) =&gt; Math.max(prev, cur))</span><br></pre></td></tr></table></figure>
+
+<p>由于未传入初始值，所以开始时prev的值为数组第一项3，cur的值为数组第二项9，取两值最大值后继续进入下一轮回调。</p>
+<ol start="3">
+<li>数组去重</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var newArr = arr.reduce(function (prev, cur) &#123;</span><br><span class="line">    prev.indexOf(cur) === -1 &amp;&amp; prev.push(cur);</span><br><span class="line">    return prev;</span><br><span class="line">&#125;,[])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var newArr = arr.reduce((prev, cur)=&gt;&#123;</span><br><span class="line">    prev.indexOf(cur) === -1 &amp;&amp; prev.push(cur);</span><br><span class="line">    return prev;</span><br><span class="line">&#125;,[])</span><br></pre></td></tr></table></figure>
+
+<p>实现的基本原理如下：</p>
+<blockquote>
+<p>① 初始化一个空数组<br>② 将需要去重处理的数组中的第1项在初始化数组中查找，如果找不到（空数组中肯定找不到），就将该项添加到初始化数组中<br>③ 将需要去重处理的数组中的第2项在初始化数组中查找，如果找不到，就将该项继续添加到初始化数组中<br>④ ……<br>⑤ 将需要去重处理的数组中的第n项在初始化数组中查找，如果找不到，就将该项继续添加到初始化数组中<br>⑥ 将这个初始化数组返回</p>
+</blockquote>
+<p>其他reduce用法</p>
+<ul>
+<li>计算对象每个值的总和</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var result = [</span><br><span class="line">    &#123;</span><br><span class="line">        subject: &apos;math&apos;,</span><br><span class="line">        score: 88</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        subject: &apos;chinese&apos;,</span><br><span class="line">        score: 95</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        subject: &apos;english&apos;,</span><br><span class="line">        score: 80</span><br><span class="line">    &#125;,</span><br><span class="line">];</span><br><span class="line">var sum = result.reduce((prev,&#123;score&#125;) =&gt; &#123;</span><br><span class="line">    return prev + score;</span><br><span class="line">&#125;,0)</span><br><span class="line">console.log(sum); //263</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>替代map(filter,find)类似</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var arr = [1, 2, 3, 4, 5];</span><br><span class="line">const sum = arr.reduce((prev, cur, index ,arr) =&gt; &#123;</span><br><span class="line">    prev.push(cur + 1);</span><br><span class="line">    return prev;</span><br><span class="line">&#125;,[])</span><br><span class="line">console.log(arr,sum)</span><br></pre></td></tr></table></figure>
+
+<h4 id="find-findIndex-indexOf"><a href="#find-findIndex-indexOf" class="headerlink" title="find, findIndex, indexOf"></a>find, findIndex, indexOf</h4><p>  <strong>find:返回与指定条件匹配的第一个实例，如果查到不会继续查找其他匹配的实例。</strong></p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];</span><br><span class="line">const found = arr.find(el =&gt; el &gt; 5);</span><br><span class="line">console.log(found);   //6</span><br></pre></td></tr></table></figure>
+
+<p>  <strong>注意</strong>，虽然5之后的所有元素都满足条件，但是 <code>find</code> 只返回第一个匹配的元素。当咱们发现匹配项并想中断<code>for</code>循环，在这种情况下，<code>find</code> 就可以派上用场了。</p>
+<p>  <strong>findIndex：这与find几乎完全相同，但不是返回第一个匹配元素，而是返回第一个匹配元素的索引.</strong></p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const arr = [&apos;Nick&apos;, &apos;Frank&apos;, &apos;Joe&apos;, &apos;Frank&apos;];</span><br><span class="line">const foundIndex = arr.findIndex(el =&gt; el === &apos;Frank&apos;);</span><br><span class="line">console.log(foundIndex) //1</span><br></pre></td></tr></table></figure>
+
+<p>  <strong>indexOf：与<code>findIndex</code>几乎完全相同，但它不是将函数作为参数，而是采用一个简单的值。 当你需要更简单的逻辑并且不需要使用函数来检查是否存在匹配时，可以使用此方法。</strong></p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const arr = [&apos;Nick&apos;, &apos;Frank&apos;, &apos;Joe&apos;, &apos;Frank&apos;];</span><br><span class="line">const foundIndex = arr.indexOf(&apos;Frank&apos;);</span><br><span class="line">console.log(foundIndex); // 1</span><br></pre></td></tr></table></figure>
+
+<h4 id="push-pop-shift-unshift"><a href="#push-pop-shift-unshift" class="headerlink" title="push pop shift unshift"></a>push pop shift unshift</h4><p><strong>push:</strong> 这是一个相对简单的方法，它将一个项添加到数组的末尾。它就地修改数组，函数本身会返回数组长度</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let arr = [1, 2, 3, 4]</span><br><span class="line">const pushed = arr.push(6)</span><br><span class="line">console.log(arr); // [1, 2, 3, 4, 6]</span><br><span class="line">console.log(pushed); // 5 数组长度</span><br></pre></td></tr></table></figure>
+
+<p><strong>pop:</strong> 这将从数组中删除最后一项，同样，它在适当的位置修改数组，函数本身返回从数组中删除的项</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let arr = [1, 2, 3, 4]</span><br><span class="line">const popped = arr.pop();</span><br><span class="line">console.log(arr); // [1, 2, 3]</span><br><span class="line">console.log(popped); // 4</span><br></pre></td></tr></table></figure>
+
+<p><strong>shift:</strong> 从数组中删除第一项，同样它在适当的位置修改数组。函数本身返回从数组中删除的项。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let arr = [1, 2, 3, 4]</span><br><span class="line">const shifted = arr.shift()</span><br><span class="line">console.log(arr); // [2, 3, 4]</span><br><span class="line">console.log(shifted); //1</span><br></pre></td></tr></table></figure>
+
+<p><strong>unshift:</strong> 将一个或多个元素添加到数组的开头。同样，它在适当的位置修改数组。与许多其他方法不同，函数本身返回数组的长度。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let arr = [1, 2, 3, 4];</span><br><span class="line">const unshifted = arr.unshift(5, 6, 7);</span><br><span class="line">console.log(arr); // [5, 6, 7, 1, 2, 3, 4]</span><br><span class="line">console.log(unshifted); // 7</span><br></pre></td></tr></table></figure>
+
+<h4 id="splice-slice"><a href="#splice-slice" class="headerlink" title="splice,slice"></a>splice,slice</h4><p><strong>splice:</strong> 通过删除或替换现有元素和/或添加新元素来更改数组的内容，此方法会修改了数组本身。</p>
+<p><strong>语法:</strong> </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">arrObject.splice(index,howmany,item1,....,itemX)</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>index</td>
+<td align="center">必需。整数，规定添加/删除项目的位置，使用负数可从数组结尾处规定位置。</td>
+</tr>
+<tr>
+<td>howmany</td>
+<td align="center">必需。需要删除的项目数量。如果设置为0，则不会删除项目。</td>
+</tr>
+<tr>
+<td>item1,…,itemX</td>
+<td align="center">可选。向数组添加新项目</td>
+</tr>
+</tbody></table>
+<p><strong>返回值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Array</td>
+<td align="center">包含被删除项目的新数组，如果有的话。</td>
+</tr>
+</tbody></table>
+<p>下面的代码示例的意思是：在数组的位置<code>1</code>上删除<code>0</code>各元素，并插入<code>b</code>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let arr = [&apos;a&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;];</span><br><span class="line">arr.splice(1, 0, &apos;b&apos;)</span><br><span class="line">console.log(arr);</span><br></pre></td></tr></table></figure>
+
+<p><strong>slice:</strong>从指定的起始位置和指定的结束位置之前返回数组的浅拷贝。如果未指定结束位置，则返回数组的其余部分。重要的是，此方法<br>不会修改数组，而是返回所需的子集。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let arr = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;];</span><br><span class="line">const sliced = arr.slice(2, 4);</span><br><span class="line">console.log(sliced); // [&apos;c&apos;, &apos;d&apos;]</span><br><span class="line">console.log(arr) //  [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;]</span><br></pre></td></tr></table></figure>
+
+<h4 id="sort"><a href="#sort" class="headerlink" title="sort"></a>sort</h4><p><strong>sort:</strong>根据提供的函数对数组进行排序。这个方法就地修改数组。如果函数返回负数或0，则顺序保持不变。如果返回正数，则交换元素顺序。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let arr = [1, 7, 3, -1, 5, 7, 2];</span><br><span class="line">const sorter = (firstEl, secondEl) =&gt; firstEl - secondEl;</span><br><span class="line">arr.sort(sorter);</span><br><span class="line">cosnole.log(arr); // [-1, 1, 2, 3, 5, 7, 7]</span><br></pre></td></tr></table></figure>
+
+<h3 id="Generators-生成器"><a href="#Generators-生成器" class="headerlink" title="Generators(生成器)"></a>Generators(生成器)</h3><hr>
+<p>生成器是一种特殊的行为,实际上是一种设计模式，咱们通过<code>next()</code>方法来遍历一组有序的值。想象一下，例如使用遍历器对数组<code>[1, 2, 3, 4, 5]</code>进行遍历。<br>第一次调用<code>next()</code>方法返回<code>1</code>，第二次调用<code>next()</code>返回<code>2</code>，以此类推。当数组的所有值都返回后,调用<code>next()</code>方法将返回<code>nul</code>l或<code>false</code>，或其他可能的值用来<br>表示数组中的所有元素都已遍历完毕。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function* greeter() &#123;</span><br><span class="line">    yield &apos;Hi&apos;;</span><br><span class="line">    yield &apos;How are you?&apos;;</span><br><span class="line">    yield &apos;Bye&apos;;</span><br><span class="line">&#125;</span><br><span class="line">const greet = greeter();</span><br><span class="line">console.log(greet.next().value);</span><br><span class="line">// &apos;Hi&apos;</span><br><span class="line">console.log(greet.next().value);</span><br><span class="line">// &apos;How are you?&apos;</span><br><span class="line">console.log(greet.next().value);</span><br><span class="line">// &apos;Bye&apos;</span><br><span class="line">console.log(greet.next().value);</span><br><span class="line">// undefined</span><br></pre></td></tr></table></figure>
+
+<p>使用生成器生成无限个值：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function* idCreator()&#123;</span><br><span class="line">    let i = 0;</span><br><span class="line">    while (true)</span><br><span class="line">      yield i++;</span><br><span class="line">&#125;</span><br><span class="line">const ids = idCreator();</span><br><span class="line">console.log(ids.next().value);</span><br><span class="line">// 0</span><br><span class="line">console.log(ids.next().value);</span><br><span class="line">// 1</span><br><span class="line">console.log(ids.next().value);</span><br><span class="line">// 2</span><br><span class="line">console.log(ids.next().value);</span><br><span class="line">// ...</span><br></pre></td></tr></table></figure>
+
+<h3 id="严格相等运算符-与相等运算符"><a href="#严格相等运算符-与相等运算符" class="headerlink" title="严格相等运算符(===)与相等运算符(===)"></a>严格相等运算符(===)与相等运算符(===)</h3><hr>
+<p>大家一定要知道JS中的严格相等运算符(<code>===</code>)和相等运算符(<code>==</code>)之间的区别。<code>==</code>运算符在比较值之前会进行类型转换，而<code>===</code>运算符在比较之前不会进行任何类型转换。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">console.log(0 == &apos;0&apos;);</span><br><span class="line">// true</span><br><span class="line">console.log(0 === &apos;0&apos;);</span><br><span class="line">// false</span><br></pre></td></tr></table></figure>
+
+<h3 id="对象比较"><a href="#对象比较" class="headerlink" title="对象比较"></a>对象比较</h3><hr>
+<p>JS新手经常所犯的错误是直接比较对象。变量指向内存中对象的引用，而不是对象本身!实际比较它们的一种方法是将对象转换为JSON字符串。这有一个缺点：对象属性顺序不能<br>保证，比较对象的一种更安全的方法是引入专门进行深度对象比较的库(例如,<a href="https://lodash.com/docs/4.17.15#isEqual" target="_blank" rel="noopener">lodash中isEqual</a>)</p>
+<p>下面的对象看起来是相等的，但实际上它们指向不同的引用。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const joe1 = &#123; name: &apos;Daniel&apos; &#125;;</span><br><span class="line">const joe2 = &#123; name: &apos;Daniel&apos; &#125;;</span><br><span class="line">console.log(joe1 === joe2); // false</span><br></pre></td></tr></table></figure>
+
+<p>相反，下面的计算结果为<code>true</code>，因为一个对象被设置为与另一个对象相等，因此指向相同的引用(内存中只有一个对象)。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const joe1 = &#123; name: &apos;Daniel&apos; &#125;;</span><br><span class="line">const joe2 = joe1;</span><br><span class="line">console.log(joe1 === joe2); //true</span><br></pre></td></tr></table></figure>
+
+<h3 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a>回调函数</h3><hr>
+<p>很多人都被JS回调函数吓倒了。他们很简单，举个例子，<code>console.log</code>函数作为回调函数传递给<code>myFunc</code>,它在<code>setTimeout</code>完成时进行。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function myFunc(text, callback)&#123;</span><br><span class="line">    setTimeout(function() &#123;</span><br><span class="line">        console.log(text);</span><br><span class="line">    &#125;, 2000);</span><br><span class="line">&#125;</span><br><span class="line">myFunc(&apos;Hello world!&apos;,console.log);</span><br></pre></td></tr></table></figure>
+
+<h3 id="Promises"><a href="#Promises" class="headerlink" title="Promises"></a>Promises</h3><hr>
+<p>一旦你理解了JS回调，很快就会发现自己陷入了”回调地狱”中。这个时候可以使用<code>promise</code>,将一部逻辑包装在<code>promise</code>中，成功时<code>resolve</code>或在失败时<code>reject</code><br>使用<code>then</code>来处理成功的情况，使用<code>catch</code>来处理失败异常</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const myPromise = new Promise(function(res, rej) &#123;</span><br><span class="line">    setTimeout(function()&#123;</span><br><span class="line">        if(Math.random() &lt; 0.9) &#123;</span><br><span class="line">            return res(&apos;Hooray!&apos;);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            return rej(&apos;Oh no!&apos;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,1000);</span><br><span class="line">&#125;)</span><br><span class="line">myPromise.then(function(data) &#123;</span><br><span class="line">    console.log(&apos;Success&apos; + data);</span><br><span class="line">&#125;)</span><br><span class="line">.catch(function(err) &#123;</span><br><span class="line">    console.log(&apos;Error&apos; + err);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="Async-Await"><a href="#Async-Await" class="headerlink" title="Async/Await"></a>Async/Await</h3><hr>
+<p>在掌握了promise的用法后，你可能也会喜欢<code>async await</code>,它是一种基于<code>promise</code>的”语法糖”。在下面的示例中，咱们创建了一个<code>async</code>函数，并<code>awit greeter</code>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const greeter = new Promise((res,rej) =&gt; &#123;</span><br><span class="line">    setTimeout(() =&gt; res(&apos;Hello world!&apos;),2000);</span><br><span class="line">&#125;)</span><br><span class="line">async function myFunc() &#123;</span><br><span class="line">    const greeting = await greeter;</span><br><span class="line">    console.log(greeting);</span><br><span class="line">&#125;</span><br><span class="line">myFunc();</span><br><span class="line">// &apos;Hello world!&apos;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术文章</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+        <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>nodejs版本降级升级</title>
     <url>/DanielBlog/2019/10/28/nodejs%E7%89%88%E6%9C%AC%E9%99%8D%E7%BA%A7%E5%8D%87%E7%BA%A7/</url>
     <content><![CDATA[<hr>
@@ -43,7 +285,7 @@
   <entry>
     <title>test文章</title>
     <url>/DanielBlog/2019/10/25/test%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h3 id="111"><a href="#111" class="headerlink" title="111"></a>111</h3><h2 id="2222"><a href="#2222" class="headerlink" title="2222"></a>2222</h2><p><code>hello world</code></p>
+    <content><![CDATA[<h3 id="111"><a href="#111" class="headerlink" title="111"></a>111</h3><h2 id="2222"><a href="#2222" class="headerlink" title="2222"></a>2222</h2><p><code>hello world11111</code></p>
 ]]></content>
   </entry>
   <entry>
